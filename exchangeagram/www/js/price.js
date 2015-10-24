@@ -6,7 +6,7 @@ function lowestPrice(ISBN) {
 		url: 'https://hackingedu.chegg.com/hacking-edu/catalog/priced/byEan/9780805371468',
 		headers: {"authorization" : "Basic QzhPYXFiQVBhdlpmQXBoS05MUTdvckdaZUVQOWowYlc6YVJVRmloQTJMWklN MVVjMQ=="}
 	}).then(function successCallback(response) {
-		var price = response.body.prices[2].price;
+		price = response.body.prices[2].price;
 		console.log(price);
 	});
 	return price;
