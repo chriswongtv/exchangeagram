@@ -1,27 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $http) {
-  $http.get(
-    'https://hackingedu.chegg.com/hacking-edu/catalog/priced/byEan/9780805371468',
-    {
-      headers: {
-      'authorization' : 'Basic UUNOVUhVekJUQ2huR0tOcktlQXhWa3BFc29kQXVLZWw6UmUydklRR1JQQzky bUtLdw=='
-      }
-  })
+.controller('DashCtrl', function($scope) {
+  
 })
-
-  // $http({
-  //   method: 'GET',
-  //   url: 'https://hackingedu.chegg.com/hacking-edu/catalog/priced/byEan/9780805371468',
-  //   headers: {
-  //     'authorization': 'Basic UUNOVUhVekJUQ2huR0tOcktlQXhWa3BFc29kQXVLZWw6UmUydklRR1JQQzky bUtLdw=='
-  //   }
-  // }).then(function successCallback(response) {
-  //   console.log(response);
-  //   var price = response.body.prices[2].price;
-  //   console.log(price);
-  //   return price;
-  // });
 
 
 .controller('ChatsCtrl', function($scope, Chats) {
