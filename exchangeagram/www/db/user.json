@@ -1,0 +1,34 @@
+[
+
+{
+
+		"id": "firstnumber",
+		"name": "myname",
+		"school": "myschool",
+		"term": "fall" 
+},
+
+{
+		"id": "secondnumber",
+		"name": "myname",
+		"school": "myschool",
+		"term": "fall"
+},
+
+{
+		"id": "bookID2",
+		"title": "Three Little Pigs",
+		"author": "Author Yo",
+		"edition": "Edition #1",
+		"isbn": "456456",
+		"price": "#100"
+}
+
+{
+
+
+
+}
+
+
+]

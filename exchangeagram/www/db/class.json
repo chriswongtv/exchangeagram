@@ -1,0 +1,12 @@
+{
+	"book": 
+	{
+		"id": "classID",
+		"school": "yourschool",
+		"courseCode": "CS",
+		"courseNum": "101",
+		"term": "winter", 
+		"professor": "Professor YO",
+		"book_id": "235234"
+	}
+}
