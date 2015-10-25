@@ -1,8 +1,7 @@
 {
 	"period":
 	{
-		"period_id": " 123123 ",
-		"periodName": "yourperiodname"
+		"period_id": "2015",
+		"periodName": ["Fall", "Winter", "Spring", "Summer"]
 	}
-
 }

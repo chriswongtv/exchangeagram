@@ -1,6 +1,19 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope) {
+  var rest = require('restler');
+
+  var query = "SELECT * FROM userDB";
+
+rest.post('https://api-us.clusterpoint.com/v4/' + config.account_id + '/' + config.database + '/_query', {
+  username: config.username,
+  password: config.password,
+  data: JSON.stringify(records)
+}).on('complete', function(data) {
+  console.log(data);
+});
+
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called

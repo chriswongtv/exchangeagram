@@ -1,6 +1,6 @@
 // --------- To test query in .js -----------
 
-/** *********** INCOMPLETE *************
+/************** INCOMPLETE *************
 
 1. https://www.clusterpoint.com/docs/?page=Reference&language=REST -> Check Methods
 
@@ -29,7 +29,7 @@ var rest = require('restler');
 
 var query = "SELECT * FROM userDB";
 
-rest.post('https://api-us.clusterpoint.com/v4/' + config.account_id + '/' + config.database + '/_query') {
+rest.post('https://api-us.clusterpoint.com/v4/' + config.account_id + '/' + config.database + '/_query', {
   username: config.username,
   password: config.password,
   data: JSON.stringify(records)

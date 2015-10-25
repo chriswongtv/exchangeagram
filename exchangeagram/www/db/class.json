@@ -1,11 +1,12 @@
 {
-	"book": 
+	"class": 
 	{
 		"id": "classID",
-		"school": "yourschool",
+		"school": "Stanford",
 		"courseCode": "CS",
 		"courseNum": "101",
-		"term": "winter", 
+		"period_id": "2015",
+		"periodName": "Spring",
 		"professor": "Professor YO",
 		"book_id": "235234"
 	}

@@ -1,13 +1,12 @@
 {
 	"book":
 	{
-		"id": "bookID1",
+		"id": "book101",
 		"title": "Three Little Pigs",
-		"author": "Author Yo",
+		"author": "Author YoYo",
 		"edition": "Edition #1",
 		"isbn": "456456",
-		"price": "#100"
-
+		"price": "$100"
 	}
-
+	
 }
