@@ -1,4 +1,46 @@
 angular.module('exchange.services', [])
+.factory('Books', function() {
+	var books = [{
+		"id": 0,
+		"terms": 
+			[{ 
+				"term": "Fall 2015",
+				"class": [{
+					"name": "MATH 1B",
+					"book": "Calculus: Early Transcendentals",
+					"price": "Buy: $65"
+				}]
+			},
+			{
+				"term": "Spring 2015",
+				"class": [{
+					"name": "CS 2C",
+					"book": "Data Structure in C++",
+					"price": "Buy: $70"
+				}]
+			}]
+	}, {
+		"id": 1,
+		"terms": 
+			{ 
+				"term": "Spring 2015",
+				"class": [{
+					"name": "CS 2C",
+					"book": "Data Structure in C++"
+				}]
+			}
+	}];
+
+	return {
+		get: function(id) {
+			for (var i = 0; i < books.length; i++) {
+				if (books[i].id === parseInt(id))
+					return books[i];
+			}
+			return null;
+		}
+	}
+});
 
 // .factory('Chats', function() {
 //   // Might use a resource here that returns a JSON array

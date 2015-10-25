@@ -1,28 +1,24 @@
-<ion-view view-title="Dashboard">
+<ion-view>
   <ion-content>
     
+    <div id="hero">
+      It's the end of the semester!<br>
+      Please select the books you want to sell below.
+    </div>
+
     <div class="list">
 
-      <div class="item item-divider">
-        CS 2C
+      <div class="item item-divider" ng-repeat="x in books.terms">
+        {{x.term}}
       </div>
 
-      <li class="item item-checkbox">
-        Data Structure in C++
+      <li class="item item-checkbox" ng-repeat="y in books.terms[0].class">
+        <h2>{{y.name}}</h2>
+        <p>{{y.book}}</p>
         <label class="checkbox">
-          <input type="checkbox">
+          <input type="checkbox" ng-model="isChecked" ng-change="showPopup(isChecked)">
         </label>
-      </li>
-
-      <div class="item item-divider">
-        MATH 1A
-      </div>
-
-      <li class="item item-checkbox">
-        Calculus: Early Transcendentals
-        <label class="checkbox">
-          <input type="checkbox">
-        </label>
+        <span class="badge badge-assertive">{{ y.price }}</span>
       </li>
 
     </div>
