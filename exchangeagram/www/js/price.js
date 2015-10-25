@@ -3,8 +3,10 @@ function lowestPrice(ISBN) {
 	var price = 0;
 	$http({
 		method: 'GET',
-		url: 'https://hackingedu.chegg.com/hacking-edu/catalog/priced/byEan/9780805371468',
-		headers: {"authorization" : "Basic QzhPYXFiQVBhdlpmQXBoS05MUTdvckdaZUVQOWowYlc6YVJVRmloQTJMWklN MVVjMQ=="}
+		url: 'https://hackingedu.chegg.com/hacking-edu/catalog/priced/byEan/' + ISBN,
+		headers: {
+			"authorization" : "Basic QzhPYXFiQVBhdlpmQXBoS05MUTdvckdaZUVQOWowYlc6YVJVRmloQTJMWklN MVVjMQ=="
+		}
 	}).then(function successCallback(response) {
 		price = response.body[0].prices[1].price;
 	});
@@ -14,6 +16,15 @@ function lowestPrice(ISBN) {
 function highestPrice(ISBN) {
 	// TO DO: Get the highest unused new price of this ISBN from Chegg
 	var price = 0;
+	$http({
+		method: 'GET',
+		url: 'https://hackingedu.chegg.com/hacking-edu/catalog/priced/byEan/' + ISBN,
+		headers: {
+			"authorization" : "Basic QzhPYXFiQVBhdlpmQXBoS05MUTdvckdaZUVQOWowYlc6YVJVRmloQTJMWklN MVVjMQ=="
+		}
+	}).then(function successCallback(response) {
+		price = response.body[0].listPrice;
+	});
 	return price;
 }
 
