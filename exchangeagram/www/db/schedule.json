@@ -1,0 +1,45 @@
+[
+
+	{
+		"id": "Will",
+		"isbn": "0321908449",
+		"title": "Chemistry (12th Edition)",
+		"class": "Chemistry",
+		"period": "Fall"
+	},
+
+	{
+		"id": "Peter",
+		"isbn": "0132390779",
+		"title": "Security in Computing",
+		"class": "Computing",
+		"period": "Winter"
+	},
+
+	{
+		"id": "Josh",
+		"isbn": "0262517671",
+		"title": "Computing",
+		"class": "Computing",
+		"period": "Spring"
+	},
+
+
+	{
+		"id": "Dex",
+		"isbn": "0538497904",
+		"title": "Calculus",
+		"class": "Mathematics",
+		"period": "Summer"
+	},
+
+
+	{
+		"id": "Jane",
+		"isbn": "0073513601",
+		"title": "English Brushup",
+		"class": "English",
+		"period": "Fall"
+	}
+
+]

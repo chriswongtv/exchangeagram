@@ -1,13 +1,15 @@
-{
-	"class": 
+[
 	{
-		"id": "classID",
-		"school": "Stanford",
-		"courseCode": "CS",
-		"courseNum": "101",
-		"period_id": "2015",
-		"periodName": "Spring",
-		"professor": "Professor YO",
-		"book_id": "235234"
+		"id":"classID",
+   		"school":"yourschool",
+   		"school":"Stanford",
+   		"courseCode":"CS",
+   		"courseNum":"101",
+   		"period_id":"2015",
+   		"periodName":"Spring",
+   		"professor":"Professor YO",
+   		"book_id":"235234"
+
 	}
-}
+
+]
