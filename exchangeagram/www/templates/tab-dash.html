@@ -1,28 +1,27 @@
-<ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
-      </div>
+<ion-view>
+  <ion-content>
+    
+    <div id="hero">
+      It's the end of the semester!<br>
+      Please select the books you want to sell below.
     </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
-        </div>
+
+    <div class="list">
+
+      <div class="item item-divider" ng-repeat="x in books.terms">
+        {{x.term}}
       </div>
+
+      <li class="item item-checkbox" ng-repeat="y in books.terms[0].class">
+        <h2>{{y.name}}</h2>
+        <p>{{y.book}}</p>
+        <label class="checkbox">
+          <input type="checkbox" ng-model="isChecked" ng-change="showPopup(isChecked)">
+        </label>
+        <span class="badge badge-assertive">{{ y.price }}</span>
+      </li>
+
     </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
-        </div>
-      </div>
-    </div>
+
   </ion-content>
 </ion-view>

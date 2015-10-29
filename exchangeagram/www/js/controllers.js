@@ -1,41 +1,43 @@
-angular.module('starter.controllers', [])
+angular.module('exchange.controllers', [])
 
-.controller('DashCtrl', function($scope) {
-  var rest = require('restler');
+.controller('DashCtrl', function($scope, $ionicPopup, Books) {
 
-  var query = "SELECT * FROM userDB";
+  $scope.books = Books.get(0);
+console.log($scope.books);
+  $scope.showPopup = function() {
+    $scope.data = {};
 
-rest.post('https://api-us.clusterpoint.com/v4/' + config.account_id + '/' + config.database + '/_query', {
-  username: config.username,
-  password: config.password,
-  data: JSON.stringify(records)
-}).on('complete', function(data) {
-  console.log(data);
-});
+    var sellPopup = $ionicPopup.show({
+      template: '',
+      title: "Describe your book's condition",
+      scope: $scope,
+      buttons: [
+      { 
+        text: 'Cancel',
+        onTap: function(e) {
+        }
+      },
+      {
+        text: 'Submit',
+        type: 'button-positive',
+        onTap: function(e) {
+          // todo function
+        }
+      }]
+    })
+  }
 
 })
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
 
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-})
+.controller('TermsCtrl', function($scope) {})
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
+.controller('ClasslistCtrl', function($scope) {})
+
+.controller('ClassCtrl', function($scope) {
+  
 })
 
 .controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+  
 });

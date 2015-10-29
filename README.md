@@ -1,2 +1,4 @@
 # exchangeagram
-HackingEDU 2015 Project
+##HackingEDU 2015 Project
+
+Exchangeagram is a smart automated textbook exchange program aimed at simplifying the textbook exchange process. All the student have to do is to input their class schedule before the term, and the service will automatically match the class with the book that they need. At the end of the term, the service will automatically match the book with another student who will be using the same book the following term, making the process streamlined and intuitive. To keep things fair for both sides of the trade, the service will automatically generate a equilibrium price based on the supply and demand of the book.
